@@ -30,6 +30,10 @@ const recordCollection = {
      if( value=="")
   {
     delete records[id][prop]
+  }else if(prop=="tracks" && value=="Free")
+  {
+   
+   records[id][prop].unshift("1999")
   }
   else{
       records[id][prop]=[]
@@ -43,7 +47,12 @@ const recordCollection = {
   {
    delete records[id][prop]
    records[id][prop].push(value)
-  }else if(value==""){
+  } else if(prop=="tracks" && value=="Free")
+  {
+   
+   records[id][prop].unshift("1999")
+  }
+  else if(value==""){
 delete records[id][prop]
   }
   else
@@ -58,8 +67,6 @@ delete records[id][prop]
     return records;
   } 
   
-updateRecords(recordCollection, 5439, 'artist', 'ABBA');
+let a=updateRecords(recordCollection, 5439, 'artist', 'ABBA');
+console.log(a);
   
-  let a=updateRecords(recordCollection, 5439, 'artist', 'ABBA');
-  a=updateRecords(recordCollection, 5439, "tracks", "Take a Chance on Me")
-  console.log(a);
