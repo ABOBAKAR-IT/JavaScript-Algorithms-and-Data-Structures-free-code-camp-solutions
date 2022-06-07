@@ -6,3 +6,4 @@ function removeFirstTwo(list) {
   return arr;
 }
 const arr = removeFirstTwo(source);
+

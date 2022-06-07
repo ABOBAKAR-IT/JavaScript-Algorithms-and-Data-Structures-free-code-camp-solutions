@@ -12,3 +12,4 @@ const stats = {
   // Only change code above this line
   const a=half(stats);
   console.log(a);
+  //creat sum function
