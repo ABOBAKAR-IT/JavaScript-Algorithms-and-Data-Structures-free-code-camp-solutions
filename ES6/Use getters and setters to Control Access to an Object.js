@@ -1,16 +1,16 @@
 // Only change code below this line
 class Thermostat{
     constructor(temp){
-      this.temperature=5/9 *(temp-32)
+      this.temperature2=5/9 *(temp-32)
       
     }
      // getter
-    get Celsius() {
-      return this.temperature;
+    get temperature() {
+      return this.temperature2;
     }
     // setter
-    set Celsius(temp) {
-       this.temperature=temp*9.0/5+32
+    set temperature(temp) {
+       this.temperature2=temp 
     }
   }
   // Only change code above this line
